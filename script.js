@@ -1,50 +1,49 @@
-const quotes = [
+const questions = [
   {
-    quote: "The way to get started is to quit talking and begin doing.",
-    author: "Walt Disney",
+    Q: "The way to get started is to quit talking and begin doing.",
+    A: "Walt Disney",
   },
   {
-    quote: "Life is what happens when you're busy making other plans.",
-    author: "John Lennon",
+    Q: "Life is what happens when you're busy making other plans.",
+    A: "John Lennon",
   },
   {
-    quote:
-      "The world is a book and those who do not travel read only one page.",
-    author: "Saint Augustine",
+    Q: "The world is a book and those who do not travel read only one page.",
+    A: "Saint Augustine",
   },
   {
-    quote: "Life is either a daring adventure or nothing at all.",
-    author: "Helen Keller",
+    Q: "Life is either a daring adventure or nothing at all.",
+    A: "Helen Keller",
   },
   {
-    quote: "To Travel is to Live",
-    author: "Hans Christian Andersen",
+    Q: "To Travel is to Live",
+    A: "Hans Christian Andersen",
   },
   {
-    quote: "Only a life lived for others is a life worthwhile.",
-    author: "Albert Einstein",
+    Q: "Only a life lived for others is a life worthwhile.",
+    A: "Albert Einstein",
   },
   {
-    quote: "You only live once, but if you do it right, once is enough.",
-    author: "Mae West",
+    Q: "You only live once, but if you do it right, once is enough.",
+    A: "Mae West",
   },
   {
-    quote: "Never go on trips with anyone you do ntot love.",
-    author: "Hemmingway",
+    Q: "Never go on trips with anyone you do ntot love.",
+    A: "Hemmingway",
   },
   {
-    quote: "We wander for distraction, but we travel for fulfilment.",
-    author: "Hilaire Belloc",
+    Q: "We wander for distraction, but we travel for fulfilment.",
+    A: "Hilaire Belloc",
   },
   {
-    quote: "Travel expands the mind and fills the gap.",
-    author: "Sheda Savage",
+    Q: "Travel expands the mind and fills the gap.",
+    A: "Sheda Savage",
   },
 ]; 
   
-  const quote = document.querySelector(".quote");
-  const author = document.querySelector(".author");
-  const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  const Q = document.querySelector(".quote");
+  const A = document.querySelector(".author");
+  const ramdomQ = Q[Math.floor(Math.random() * questions.length)];
 
-  quote.innerText = todaysQuote.quote;
-  author.innerText = todaysQuote.author;
+  Q.innerText = ramdomQ.Q;
+  A.innerText = ramdomQ.A;

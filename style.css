@@ -34,3 +34,20 @@ body {
 .answerClose {
     width: 60px; 
 } 
+
+.timer {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: 190px;
+    height: 16px;
+    background-color: blueviolet;
+    margin-top: 2px;
+    transform:scaleX(100px);
+}
+

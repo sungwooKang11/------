@@ -1,16 +1,18 @@
-const modalOpen = document.querySelector(".modalOpen");
-const modalClose = document.querySelector(".modalClose");
+const answerOpen = document.querySelector(".answerOpen");
+const answerClose = document.querySelector(".answerClose");
 const a = document.querySelector(".a");
 
-const openModal = () => {
+const openanswer = () => {
     a.classList.remove("hidden");
-    modalClose.classList.remove("hidden");
+    answerOpen.classList.add("hidden");
+    answerClose.classList.remove("hidden");
 }
 
-const closeModal = () => {
+const closeanswer = () => {
     a.classList.add("hidden");
-    modalClose.classList.add("hidden");
+    answerClose.classList.add("hidden");
+    answerOpen.classList.remove("hidden");
 }
 
-modalOpen.addEventListener("click", openModal);
-modalClose.addEventListener("click", closeModal);
+answerOpen.addEventListener("click", openanswer);
+answerClose.addEventListener("click", closeanswer);
